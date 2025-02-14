@@ -1,0 +1,106 @@
+
+
+<script type="module">
+   import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "92fc3232-1f1b-4ed1-8f09-b75e77250799",
+        apiHost: "https://mishalzubair-flowise.hf.space",
+
+        observersConfig: {
+            /* Observers Config */
+        },
+        theme: {
+            button: {
+                backgroundColor: '#FFFFFF',
+                right: 20,
+                bottom: 70,
+                size: 50,
+                dragAndDrop: true,
+                iconColor: 'black',
+                customIconSrc: 'mail_3373249.png',
+                autoWindowOpen: {
+                    autoOpen: true,
+                    openDelay: 2,
+                    autoOpenOnMobile: false
+                }
+            },
+            tooltip: {
+                showTooltip: true,
+                tooltipMessage: 'Hi!',
+                tooltipBackgroundColor: 'white',
+                tooltipTextColor: 'black',
+                tooltipFontSize: 16
+            },
+            disclaimer: {
+                title: 'Disclaimer',
+                message: "By using this chatbot, you agree to the <a target=\"_blank\" href=\"https://flowiseai.com/terms\">Terms & Condition</a>",
+                textColor: 'black',
+                buttonColor: '#3b82f6',
+                buttonText: 'Start Chatting',
+                buttonTextColor: 'white',
+                blurredBackgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backgroundColor: 'white'
+            },
+            customCSS: ``,
+            chatWindow: {
+                showTitle: true,
+                showAgentMessages: true,
+                title: 'AI Content Agent',
+          //      titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                welcomeMessage: 'Hello! How can I help you generate some content ideas today?',
+                errorMessage: 'Oops! Something went wrong. Could you rephrase it?',
+                backgroundColor: '#002147',
+                backgroundImage: '',
+                height: 600,
+                width: 400,
+                fontSize: 16,
+              starterPrompts: [
+               //     "What is a bot?",
+               //     "Who are you?"
+                ],
+                starterPromptFontSize: 15,
+                clearChatOnReload: false,
+                sourceDocsTitle: 'Sources:',
+                renderHTML: true,
+                botMessage: {
+                    backgroundColor: '#ffffff)',
+                    textColor: 'black',
+                 //   showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                },
+                userMessage: {
+                    backgroundColor: '#ffffff',
+                    textColor: 'black',
+                //    showAvatar: true,
+                    avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png'
+                },
+                textInput: {
+                    placeholder: 'Type your question',
+                    backgroundColor: '#ffffff',
+                    textColor: '#303235',
+                    sendButtonColor: '#002147',
+                    maxChars: 100,
+                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                    autoFocus: true,
+                    sendMessageSound: true,
+                    sendSoundLocation: 'send_message.mp3',
+                    receiveMessageSound: true,
+                    receiveSoundLocation: 'receive_message.mp3'
+                },
+                feedback: {
+                    color: '#303235'
+                },
+                dateTimeToggle: {
+                    date: true,
+                    time: true
+                },
+                footer: {
+                    textColor: 'white',
+                    text: '',
+                    company: '',
+                    companyLink: ''
+                }
+            }
+        }
+    })
+</script>
